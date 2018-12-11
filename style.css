@@ -13,30 +13,13 @@
     } 
 body{
     font-family: SFRegular;
+    background: rgba(86, 192, 86, .3);;
 }
 h1 {
     font-family: SFBold;
     font-size: 44px;
     color: green;
 }
-/*
-header {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-}
-header h1{
-    align-self: baseline;
-    border: 1px solid #000;
-}
-header span{
-    margin-left: 5px;
-    margin-bottom: 10px;
-    color: red;
-    align-self: center;
-}
-*/
 header{
     margin: 0 auto;
     width: 700px;
@@ -76,6 +59,7 @@ main{
 }
 .left-side{
     width: 300px;
+    background: #fff;
     box-shadow: 0px 0px 5px #008000;
     border-radius:5px;
     padding: 10px;
@@ -91,6 +75,7 @@ main{
 }
 .right-side{
     width: 300px;
+    background: #fff;
     box-shadow: 0px 0px 5px #008000;
     border-radius:5px;
     padding: 10px;
@@ -122,6 +107,7 @@ main{
     padding: 10px;
     cursor: pointer;
     text-transform: uppercase;
+    border-right: 1px solid #008000;
 }
 .switcher_item.active{
     background: #008000;
@@ -129,7 +115,7 @@ main{
 }
 .switcher_item:first-child{
     border-radius: 5px 0 0 5px;
-    border-right: 1px solid #008000;
+    /* border-right: 1px solid #008000; */
     -webkit-border-radius: 5px 0 0 5px;
     -moz-border-radius: 5px 0 0 5px;
     -ms-border-radius: 5px 0 0 5px;
@@ -137,7 +123,8 @@ main{
 }
 .switcher_item:last-child{
     border-radius:0 5px 5px 0;
-    border-left: 1px solid #008000;
+    /* border-left: 1px solid #008000; */
+    border-right: none;
     -webkit-border-radius:0 5px 5px 0;
     -moz-border-radius:0 5px 5px 0;
     -ms-border-radius:0 5px 5px 0;
@@ -157,17 +144,24 @@ main{
     -ms-border-radius:5px;
     -o-border-radius:5px;
 }
-#calcenter{
+#entryInp{
     font-family: SFBold;
     border: none;
     font-size: 36px;
 }
-#calcouter{
+#outerInp{
     font-family: SFBold;
     border: none;
     font-size: 36px;
 }
-.now-exchage{
+.now-exchage-1{
+    border-top: 1px solid #008000;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #008000;
+}
+.now-exchage-2{
     border-top: 1px solid #008000;
     padding-top: 10px;
     font-size: 20px;
@@ -176,6 +170,14 @@ main{
 }
 input:focus{
     outline: none;
+}
+#valute{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #008000;
+    appearance: auto;
 }
 /* .center{
 
@@ -198,7 +200,7 @@ footer{
     padding: 20px;
     background: rgba(0, 128, 0, 1);
     color: #fff;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

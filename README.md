@@ -16,5 +16,5 @@ Coming soon...
 
 ## Authors
 
-* **Roman Kozlov** - *Initial work* - [PurpleBooth](https://github.com/the-NZA)
+* **Roman Kozlov** - *Initial work* - [the-NZA](https://github.com/the-NZA)
 
