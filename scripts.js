@@ -24,19 +24,19 @@ let nowChangeDiv1 = document.querySelector('.now-exchage-1'),
 
 
 entryInput.addEventListener('input', () => {
-    
-    fetch('https://www.cbr-xml-daily.ru/daily_json.js')
-                                                .then(response => {
-                                                    return response.json();
-                                                })
-                                                .then(data => {
-                                                    let nowCurrency = nowExchange(rightSide);
-                                                    outerInp.value = (entryInput.value / data.Valute[nowCurrency].Value).toFixed(5);
-                                                })
-                                                .catch(error => {
-                                                    console.log(error);
-                                                    outerInp.value = "Something Went Wrong";
-                                                });
+    let url = 'https://www.cbr-xml-daily.ru/daily_json.js';
+    fetch(url)
+            .then(response => {
+            return response.json();
+            })
+            .then(data => {
+            let nowCurrency = nowExchange(rightSide);
+            outerInp.value = (entryInput.value / data.Valute[nowCurrency].Value).toFixed(5);
+            })
+            .catch(error => {
+            console.log(error);
+            outerInp.value = "Something Went Wrong";
+            });
 
     function nowExchange(sideDiv){
         return sideDiv.querySelector('.active').dataset.currency;
