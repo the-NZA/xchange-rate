@@ -12,6 +12,7 @@ Coming soon...
 * [HTML](http://www.dropwizard.io/1.0.2/docs/) - HTML
 * [CSS](https://maven.apache.org/) - CSS
 * [JS](https://rometools.github.io/rome/) - JavaScript
+* [WebPack](https://rometools.github.io/rome/) - WebPack
 
 
 ## Authors
